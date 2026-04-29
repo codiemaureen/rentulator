@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import AnalyzerInput from "./AnalyzerInput";
-import styles from "./AirbnbDealAnalyzer.module.css";
+import styles from "./RentulatorAnalyzer.module.css";
 import { AnalyzerValues } from "./types";
 import { calculateAirbnbDeal, currency, percent } from "./calculations";
 
@@ -26,7 +26,7 @@ const initialValues: AnalyzerValues = {
   closingCosts: 4500,
 };
 
-export default function AirbnbDealAnalyzer() {
+export default function RentulatorAnalyzer() {
   const [values, setValues] = useState<AnalyzerValues>(initialValues);
 
   const results = useMemo(() => calculateAirbnbDeal(values), [values]);

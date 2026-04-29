@@ -1,6 +1,6 @@
-import AirbnbDealAnalyzer from "./components/AirbnbDealAnalyzer";
+import RentulatorAnalyzer from "./components/RentulatorAnalyzer";
 
 
 export default function Page() {
-  return <AirbnbDealAnalyzer />
+  return <RentulatorAnalyzer />
 }
