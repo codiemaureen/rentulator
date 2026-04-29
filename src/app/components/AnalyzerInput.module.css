@@ -1,0 +1,51 @@
+.field {
+ width: 100%;
+}
+
+.field label {
+ display: block;
+ margin-bottom: 0.45rem;
+ color: #dce6ed;
+ font-size: 0.84rem;
+ font-weight: 800;
+}
+
+.inputWrap {
+ position: relative;
+}
+
+.field input {
+ width: 100%;
+ border: 1px solid rgba(245, 247, 250, 0.12);
+ border-radius: 16px;
+ background: rgba(3, 13, 20, 0.74);
+ color: #f5f7fa;
+ padding: 0.95rem 1rem;
+ font-size: 1rem;
+ font-weight: 800;
+ outline: none;
+ transition:
+  border-color 0.2s ease,
+  box-shadow 0.2s ease,
+  background 0.2s ease;
+}
+
+.field input:focus {
+ border-color: rgba(29, 185, 84, 0.75);
+ box-shadow: 0 0 0 4px rgba(29, 185, 84, 0.12);
+ background: rgba(4, 17, 25, 0.95);
+}
+
+.withSuffix {
+ padding-right: 3.5rem !important;
+}
+
+.suffix {
+ position: absolute;
+ right: 1rem;
+ top: 50%;
+ transform: translateY(-50%);
+ color: #9fb0bd;
+ font-weight: 800;
+ pointer-events: none;
+}

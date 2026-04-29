@@ -33,3 +33,14 @@ export type AnalyzerResults = {
   breakEvenOccupancy: number;
   rating: Rating;
 };
+
+export type UpdateAnalyzerValue = (
+  key: keyof AnalyzerValues,
+  value: number
+) => void;
+
+export type AnalyzerSectionProps = {
+  values: AnalyzerValues;
+  results: AnalyzerResults;
+  updateValue: UpdateAnalyzerValue;
+};

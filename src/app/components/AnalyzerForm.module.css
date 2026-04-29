@@ -1,0 +1,14 @@
+.formCard {
+ padding: clamp(1.25rem, 3vw, 2rem);
+ border: 1px solid rgba(245, 247, 250, 0.08);
+ border-radius: 30px;
+ background: rgba(8, 25, 35, 0.86);
+ box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+ backdrop-filter: blur(14px);
+}
+
+@media (max-width: 560px) {
+ .formCard {
+  border-radius: 22px;
+ }
+}

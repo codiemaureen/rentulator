@@ -1,329 +1,34 @@
-.analyzerPage {
+.page {
  min-height: 100vh;
- padding: clamp(1.25rem, 4vw, 4rem);
+ padding: clamp(1rem, 3vw, 3rem);
  background:
-  radial-gradient(circle at top left, rgba(29, 185, 84, 0.16), transparent 32%),
-  radial-gradient(circle at bottom right, rgba(212, 175, 55, 0.1), transparent 30%),
-  linear-gradient(135deg, #061118 0%, #0b1f2a 50%, #071720 100%);
+  radial-gradient(circle at top left, rgba(29, 185, 84, 0.13), transparent 30%),
+  radial-gradient(circle at bottom right, rgba(212, 175, 55, 0.08), transparent 28%),
+  linear-gradient(135deg, #061118 0%, #0b1f2a 52%, #071720 100%);
  color: #f5f7fa;
 }
 
-.brandHeader {
- max-width: 1180px;
- margin: 0 auto 2rem;
- padding: clamp(1.5rem, 4vw, 2.75rem);
- border: 1px solid rgba(245, 247, 250, 0.08);
- border-radius: 32px;
- background: rgba(8, 25, 35, 0.78);
- box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
- backdrop-filter: blur(14px);
-}
-
-.logoRow {
- display: flex;
- align-items: center;
- gap: 0.9rem;
- margin-bottom: 2rem;
-}
-
-.logoMark {
- width: 48px;
- height: 48px;
- border-radius: 14px;
- border: 1px solid rgba(212, 175, 55, 0.55);
- display: grid;
- place-items: center;
- color: #1db954;
- background: rgba(255, 255, 255, 0.04);
- font-size: 1.5rem;
- font-weight: 900;
-}
-
-.brandName {
- margin: 0;
- font-family: Georgia, "Times New Roman", serif;
- font-size: clamp(2rem, 4vw, 3.75rem);
- line-height: 1;
-}
-
-.tagline {
- margin: 0.35rem 0 0;
- color: #d4af37;
- text-transform: uppercase;
- letter-spacing: 0.22em;
- font-size: 0.72rem;
- font-weight: 900;
-}
-
-.heroContent {
- display: flex;
- justify-content: space-between;
- align-items: flex-start;
- gap: 1.5rem;
-}
-
-.eyebrow,
-.sectionEyebrow {
- margin: 0 0 0.7rem;
- color: #d4af37;
- text-transform: uppercase;
- letter-spacing: 0.2em;
- font-size: 0.72rem;
- font-weight: 900;
-}
-
-.heroTitle {
- max-width: 760px;
- margin: 0;
- font-family: Georgia, "Times New Roman", serif;
- font-size: clamp(2.4rem, 6vw, 5.4rem);
- line-height: 0.95;
- letter-spacing: -0.055em;
-}
-
-.heroTitle span {
- color: #1db954;
-}
-
-.heroText {
- max-width: 660px;
- margin: 1.1rem 0 0;
- color: #cbd5df;
- font-size: clamp(1rem, 1.4vw, 1.15rem);
- line-height: 1.7;
-}
-
-.badge {
- flex: 0 0 auto;
- border-radius: 999px;
- padding: 0.75rem 1rem;
- font-size: 0.76rem;
- font-weight: 900;
- letter-spacing: 0.08em;
- text-transform: uppercase;
-}
-
-.strong {
- color: #061118;
- background: #1db954;
-}
-
-.caution {
- color: #0b1f2a;
- background: #d4af37;
-}
-
-.risk {
- color: #fff;
- background: #dc2626;
-}
-
-.analyzerGrid {
+.shell {
  max-width: 1180px;
  margin: 0 auto;
  display: grid;
- grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+ grid-template-columns: minmax(0, 1.25fr) 390px;
  gap: 1.5rem;
  align-items: start;
 }
 
-.formColumn {
- display: grid;
- gap: 1.5rem;
+.leftPanel {
+ min-width: 0;
 }
 
-.section,
-.resultsCard {
- border: 1px solid rgba(245, 247, 250, 0.08);
- border-radius: 28px;
- padding: clamp(1.25rem, 3vw, 2rem);
- background: rgba(8, 25, 35, 0.88);
- box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
- backdrop-filter: blur(14px);
-}
-
-.sectionHeader,
-.resultsHeader {
- margin-bottom: 1.5rem;
-}
-
-.section h2,
-.resultsCard h2 {
- margin: 0;
- font-family: Georgia, "Times New Roman", serif;
- font-size: clamp(1.7rem, 3vw, 2.35rem);
- letter-spacing: -0.04em;
-}
-
-.section h2::after,
-.resultsCard h2::after {
- content: "";
- display: block;
- width: 48px;
- height: 2px;
- margin-top: 0.8rem;
- background: linear-gradient(90deg, #d4af37, #1db954);
-}
-
-.helperText {
- display: block;
- margin-top: 0.45rem;
- color: #d4af37;
- font-size: 0.82rem;
- font-weight: 800;
-}
-
-.formSummary {
- margin-top: 1rem;
- padding: 1rem;
- border-radius: 18px;
- border: 1px solid rgba(212, 175, 55, 0.18);
- background: rgba(212, 175, 55, 0.08);
- display: flex;
- justify-content: space-between;
- gap: 1rem;
-}
-
-.formSummary span {
- color: #b9c7d1;
-}
-
-.formSummary strong {
- color: #d4af37;
-}
-
-.resultsCard {
- position: sticky;
- top: 1.5rem;
-}
-
-.resultHero {
- border-radius: 24px;
- padding: 1.5rem;
- margin-bottom: 1rem;
- background:
-  linear-gradient(135deg, rgba(29, 185, 84, 0.18), rgba(212, 175, 55, 0.08)),
-  rgba(255, 255, 255, 0.03);
- border: 1px solid rgba(29, 185, 84, 0.22);
-}
-
-.resultLabel {
- margin: 0 0 0.5rem;
- color: #cbd5df;
- text-transform: uppercase;
- letter-spacing: 0.14em;
- font-size: 0.75rem;
- font-weight: 900;
-}
-
-.resultValue {
- margin: 0;
- color: #1db954;
- font-size: clamp(2.2rem, 5vw, 3.8rem);
- font-weight: 950;
- line-height: 1;
-}
-
-.resultValue span {
- color: #9fb0bd;
- font-size: 1rem;
- margin-left: 0.35rem;
-}
-
-.metricGrid {
- display: grid;
- grid-template-columns: repeat(2, minmax(0, 1fr));
- gap: 1rem;
-}
-
-.metric {
- border-radius: 20px;
- padding: 1rem;
- border: 1px solid rgba(245, 247, 250, 0.08);
- background: rgba(255, 255, 255, 0.035);
-}
-
-.metric span {
- display: block;
- margin-bottom: 0.4rem;
- color: #9fb0bd;
- font-size: 0.78rem;
-}
-
-.metric strong {
- color: #f5f7fa;
- font-size: 1.2rem;
-}
-
-.gold {
- color: #d4af37 !important;
-}
-
-/* Styles AnalyzerInput internals */
-.section label {
- display: block;
- margin-bottom: 0.45rem;
- color: #dce6ed;
- font-size: 0.85rem;
- font-weight: 800;
-}
-
-.section input {
- width: 100%;
- border: 1px solid rgba(245, 247, 250, 0.12);
- border-radius: 16px;
- background: rgba(3, 13, 20, 0.74);
- color: #f5f7fa;
- padding: 0.95rem 1rem;
- font-size: 1rem;
- font-weight: 800;
- outline: none;
-}
-
-.section input:focus {
- border-color: rgba(29, 185, 84, 0.75);
- box-shadow: 0 0 0 4px rgba(29, 185, 84, 0.12);
-}
-
-@media (max-width: 950px) {
- .heroContent {
-  flex-direction: column;
- }
-
- .analyzerGrid {
+@media (max-width: 980px) {
+ .shell {
   grid-template-columns: 1fr;
- }
-
- .resultsCard {
-  position: static;
  }
 }
 
 @media (max-width: 560px) {
- .analyzerPage {
+ .page {
   padding: 1rem;
- }
-
- .brandHeader,
- .section,
- .resultsCard {
-  border-radius: 22px;
- }
-
- .logoRow {
-  align-items: flex-start;
- }
-
- .metricGrid {
-  grid-template-columns: 1fr;
- }
-
- .formSummary {
-  flex-direction: column;
- }
-
- .badge {
-  width: 100%;
-  text-align: center;
  }
 }

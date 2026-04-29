@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./RentulatorAnalyzer.module.css";
+import styles from "./AnalyzerInput.module.css";
 
 type AnalyzerInputProps = {
   label: string;
