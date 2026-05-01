@@ -8,6 +8,7 @@ import RentulatorHero from "./RentulatorHero";
 import AnalyzerForm from "./AnalyzerForm";
 import ResultsCard from "./ResultsCard";
 import MobileBottomResultsBar from "./MobileBottomResultsBar";
+import InstallAppButton from "./InstallAppButton";
 
 const initialValues: AnalyzerValues = {
   purchasePrice: 250000,
@@ -46,7 +47,7 @@ export default function RentulatorAnalyzer() {
       <section className={styles.shell}>
         <div className={styles.leftPanel}>
           <RentulatorHero rating={results.rating} />
-
+          
           <AnalyzerForm
             values={values}
             results={results}

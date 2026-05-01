@@ -1,4 +1,6 @@
+import Image from "next/image";
 import styles from "./RentulatorHero.module.css";
+import InstallAppButton from "./InstallAppButton";
 
 type Props = {
   rating: string;
@@ -15,8 +17,18 @@ export default function RentulatorHero({ rating }: Props) {
   return (
     <header className={styles.hero}>
       <div>
-        <p className={styles.eyebrow}>Rentulator</p>
 
+        <div className={styles.brand}>
+          <Image
+            src="/icon-512.png"
+            alt="Rentulator"
+            width={28}
+            height={28}
+            className={styles.brandIcon}
+          />
+
+          <p className={styles.eyebrow}>RENTULATOR</p>
+        </div>
         <h1>
           Analyze before <span>you buy.</span>
         </h1>
@@ -25,6 +37,7 @@ export default function RentulatorHero({ rating }: Props) {
           Calculate cash flow, ROI, cap rate, mortgage costs, and expenses for
           your next short-term rental investment.
         </p>
+      <InstallAppButton />
       </div>
 
       <span className={`${styles.badge} ${ratingClass}`}>{rating}</span>
