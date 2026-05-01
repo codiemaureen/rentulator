@@ -1,5 +1,5 @@
 import AnalyzerInput from "./AnalyzerInput";
-import styles from "./AnalyzerSection.module.css";
+import styles from "./ExpensesCard.module.css";
 import { AnalyzerValues } from "./types";
 
 type Props = {

@@ -1,5 +1,5 @@
 import AnalyzerInput from "./AnalyzerInput";
-import styles from "./AnalyzerSection.module.css";
+import styles from "./PurchaseFinancingCard.module.css";
 import { AnalyzerValues, AnalyzerResults } from "./types";
 import { currency } from "./calculations";
 
@@ -53,12 +53,6 @@ export default function PurchaseFinancingCard({
           value={values.loanTermYears}
           onChange={(value) => updateValue("loanTermYears", value)}
           suffix="years"
-        />
-
-        <AnalyzerInput
-          label="Closing costs"
-          value={values.closingCosts}
-          onChange={(value) => updateValue("closingCosts", value)}
         />
       </div>
 

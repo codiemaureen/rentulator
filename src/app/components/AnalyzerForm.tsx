@@ -12,7 +12,7 @@ type Props = {
 
 export default function AnalyzerForm({ values, results, updateValue }: Props) {
   return (
-    <div className={styles.formCard}>
+    <div className={styles.formStack}>
       <PurchaseFinancingCard
         values={values}
         results={results}
