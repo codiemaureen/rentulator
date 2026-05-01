@@ -14,13 +14,38 @@ export default function ResultsCard({ results }: Props) {
         <h2>Results</h2>
       </div>
 
-      <div className={styles.resultHero}>
-        <p>Estimated Monthly Cash Flow</p>
-        <strong>
-          {currency(results.monthlyCashFlow)}
-          <span>/mo</span>
-        </strong>
-      </div>
+<div
+  className={`${styles.resultHero} ${
+    results.monthlyCashFlow >= 0 ? styles.positiveHero : styles.negativeHero
+  }`}
+>
+  <div className={styles.resultHeroTop}>
+    <p>Estimated Monthly Cash Flow</p>
+
+    <span
+      className={`${styles.cashFlowStatus} ${
+        results.monthlyCashFlow >= 0 ? styles.positiveStatus : styles.negativeStatus
+      }`}
+    >
+      {results.monthlyCashFlow >= 0 ? "Positive" : "Negative"}
+    </span>
+  </div>
+
+  <strong
+    className={
+      results.monthlyCashFlow >= 0 ? styles.positiveValue : styles.negativeValue
+    }
+  >
+    {currency(results.monthlyCashFlow)}
+    <span>/mo</span>
+  </strong>
+
+  <small>
+    {results.monthlyCashFlow >= 0
+      ? "This estimate shows positive monthly cash flow."
+      : "This estimate shows the property may lose money monthly."}
+  </small>
+</div>
 
       <div className={styles.metricGrid}>
         <div className={styles.metric}>
