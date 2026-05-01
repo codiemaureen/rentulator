@@ -8,7 +8,7 @@ type Props = {
 
 export default function ResultsCard({ results }: Props) {
   return (
-    <aside className={styles.resultsCard}>
+    <aside id="results" className={styles.resultsCard}>
       <div className={styles.resultsHeader}>
         <p>Investment Snapshot</p>
         <h2>Results</h2>
