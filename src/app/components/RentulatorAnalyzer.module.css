@@ -21,11 +21,34 @@
  min-width: 0;
 }
 
+
+.desktopResults {
+ position: sticky;
+ top: 1.5rem;
+ align-self: start;
+}
+
 @media (max-width: 980px) {
  .shell {
   grid-template-columns: 1fr;
  }
 }
+
+@media (max-width: 900px) {
+ .page {
+  padding-bottom: 6rem;
+ }
+
+ .shell {
+  display: block;
+ }
+
+ .desktopResults {
+  position: static;
+  margin-top: 1.25rem;
+ }
+}
+
 
 @media (max-width: 560px) {
  .page {

@@ -7,6 +7,7 @@ import { calculateAirbnbDeal } from "./calculations";
 import RentulatorHero from "./RentulatorHero";
 import AnalyzerForm from "./AnalyzerForm";
 import ResultsCard from "./ResultsCard";
+import MobileBottomResultsBar from "./MobileBottomResultsBar";
 
 const initialValues: AnalyzerValues = {
   purchasePrice: 250000,
@@ -53,8 +54,12 @@ export default function RentulatorAnalyzer() {
           />
         </div>
 
-        <ResultsCard results={results} />
+        <div className={styles.desktopResults}>
+          <ResultsCard results={results} />
+        </div>
       </section>
+
+      <MobileBottomResultsBar results={results} />
     </main>
   );
 }
