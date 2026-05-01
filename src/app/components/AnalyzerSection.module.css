@@ -48,6 +48,22 @@
  gap: 1rem;
 }
 
+.inputGroup {
+ min-width: 0;
+}
+
+.inputGroup label {
+ font-size: 0.82rem;
+ line-height: 1.25;
+ word-break: normal;
+}
+
+.inputWrapper,
+.inputGroup input {
+ width: 100%;
+ min-width: 0;
+}
+
 .helperText {
  display: block;
  margin-top: 0.45rem;

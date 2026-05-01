@@ -47,7 +47,7 @@ export default function RentulatorAnalyzer() {
       <section className={styles.shell}>
         <div className={styles.leftPanel}>
           <RentulatorHero rating={results.rating} />
-          
+
           <AnalyzerForm
             values={values}
             results={results}
@@ -55,9 +55,9 @@ export default function RentulatorAnalyzer() {
           />
         </div>
 
-        <div className={styles.desktopResults}>
+        <aside className={styles.desktopResults}>
           <ResultsCard results={results} />
-        </div>
+        </aside>
       </section>
 
       <MobileBottomResultsBar results={results} />

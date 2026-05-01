@@ -42,7 +42,23 @@
 .inputGrid {
  display: grid;
  grid-template-columns: repeat(2, minmax(0, 1fr));
- gap: 1.2rem 1.4rem;
+ gap: 1rem;
+}
+
+.inputGroup {
+ min-width: 0;
+}
+
+.inputGroup label {
+ font-size: 0.82rem;
+ line-height: 1.25;
+ word-break: normal;
+}
+
+.inputWrapper,
+.inputGroup input {
+ width: 100%;
+ min-width: 0;
 }
 
 .inputGrid>*:last-child {

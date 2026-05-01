@@ -40,13 +40,30 @@
 .inputGrid {
  display: grid;
  grid-template-columns: repeat(2, minmax(0, 1fr));
- gap: 1.25rem 1.5rem;
+ gap: 1rem;
+}
+
+.inputGroup {
+ min-width: 0;
+}
+
+.inputGroup label {
+ font-size: 0.82rem;
+ line-height: 1.25;
+ word-break: normal;
+}
+
+.inputWrapper,
+.inputGroup input {
+ width: 100%;
+ min-width: 0;
 }
 
 .helperText {
  display: block;
  color: #d6bd4c;
- font-size: 0.88rem;
+ font-size: 0.78rem;
+ line-height: 1.35;
  font-weight: 800;
  margin-top: 0.65rem;
 }

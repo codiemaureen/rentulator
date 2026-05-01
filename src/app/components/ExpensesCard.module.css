@@ -40,14 +40,45 @@
 
 .inputGrid {
  display: grid;
- grid-template-columns: repeat(3, minmax(0, 1fr));
- gap: 1.2rem 1.4rem;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 1rem;
+}
+
+.inputGroup {
+ min-width: 0;
+}
+
+.inputGroup label {
+ font-size: 0.82rem;
+ line-height: 1.25;
+ word-break: normal;
+}
+
+.inputWrapper,
+.inputGroup input {
+ width: 100%;
+ min-width: 0;
 }
 
 @media (max-width: 1000px) {
  .inputGrid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
  }
+}
+
+@media (min-width: 901px) {
+ .inputGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+ }
+  .card h2 {
+   font-size: clamp(2rem, 2.6vw, 3rem);
+   line-height: 0.95;
+  }
+
+  .card {
+   padding: 1.6rem;
+  }
 }
 
 @media (max-width: 700px) {
