@@ -1,62 +1,48 @@
 .resultsCard {
- position: sticky;
- top: 1.5rem;
- padding: 1.5rem;
- border: 1px solid rgba(245, 247, 250, 0.08);
- border-radius: 30px;
- background: rgba(8, 25, 35, 0.86);
- box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
- backdrop-filter: blur(14px);
+  position: sticky;
+  top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(245, 247, 250, 0.08);
+  border-radius: 30px;
+  background: rgba(8, 25, 35, 0.86);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
 }
 
 .resultsHeader {
- margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .resultsHeader p {
- margin: 0 0 0.65rem;
- color: #d4af37;
- font-size: 0.72rem;
- font-weight: 900;
- letter-spacing: 0.2em;
- text-transform: uppercase;
+  margin: 0 0 0.65rem;
+  color: #d4af37;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .resultsHeader h2 {
- margin: 0;
- font-family: Georgia, "Times New Roman", serif;
- font-size: clamp(1.45rem, 2.5vw, 2rem);
- letter-spacing: -0.04em;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  letter-spacing: -0.04em;
 }
 
 .resultsHeader h2::after {
- content: "";
- display: block;
- width: 44px;
- height: 2px;
- margin-top: 0.65rem;
- background: linear-gradient(90deg, #d4af37, #1db954);
- border-radius: 999px;
+  content: "";
+  display: block;
+  width: 44px;
+  height: 2px;
+  margin-top: 0.65rem;
+  background: linear-gradient(90deg, #d4af37, #1db954);
+  border-radius: 999px;
 }
 
 .resultHero {
   border-radius: 1.5rem;
   padding: clamp(1.35rem, 3vw, 2rem);
   margin-bottom: 1.35rem;
-}
-
-.positiveHero {
-  background: linear-gradient(135deg,
-      rgba(34, 197, 94, 0.18),
-      rgba(34, 197, 94, 0.08));
-  border: 1px solid rgba(74, 222, 128, 0.32);
-}
-
-.negativeHero {
-  background: linear-gradient(135deg,
-      rgba(248, 113, 113, 0.18),
-      rgba(248, 113, 113, 0.08));
-  border: 1px solid rgba(248, 113, 113, 0.32);
 }
 
 .resultHeroTop {
@@ -75,6 +61,27 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
+
+.resultsCard,
+.resultsPanel,
+.analyzerResults {
+  padding-bottom: 9rem;
+}
+
+.positiveHero {
+  background: linear-gradient(135deg,
+      rgba(34, 197, 94, 0.18),
+      rgba(34, 197, 94, 0.08));
+  border: 1px solid rgba(74, 222, 128, 0.32);
+}
+
+.negativeHero {
+  background: linear-gradient(135deg,
+      rgba(248, 113, 113, 0.18),
+      rgba(248, 113, 113, 0.08));
+  border: 1px solid rgba(248, 113, 113, 0.32);
+}
+
 
 .cashFlowStatus {
   white-space: nowrap;
