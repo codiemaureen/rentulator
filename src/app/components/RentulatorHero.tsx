@@ -20,11 +20,11 @@ export default function RentulatorHero({ rating }: Props) {
 
         <div className={styles.brand}>
           <Image
-            src="/icon-512.png"
-            alt="Rentulator"
-            width={28}
-            height={28}
-            className={styles.brandIcon}
+            src="/logo.png"
+            alt="Rentulator logo"
+            width={180}
+            height={180}
+            className={styles.logo}
           />
 
           <p className={styles.eyebrow}>RENTULATOR</p>

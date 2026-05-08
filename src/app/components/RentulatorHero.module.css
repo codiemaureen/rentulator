@@ -18,11 +18,10 @@
  gap: 0.6rem;
 }
 
-.brandIcon {
- height: 5em;
- width: auto;
- transform: translateY(-1px);
- opacity: 0.9;
+.logo {
+ width: clamp(72px, 10vw, 160px);
+ height: auto;
+ object-fit: contain;
 }
 
 
